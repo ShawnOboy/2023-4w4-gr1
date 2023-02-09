@@ -5,7 +5,24 @@
     font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
 }
 
+header {
+
+    background-color: rgb(85,118,101);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    margin: 0;
+
+    box-shadow: inset 0rem -1rem 2rem 1rem rgb(47, 89, 67);
+
+}
+
 .menu-entete-container {
+
+    font-size: 1.5rem;
 
     .menu {
 
@@ -20,6 +37,17 @@
             a {
 
                 padding: 0.5rem 1rem;
+                color: rgb(221, 221, 221);
+                text-shadow: 0 2px black;
+
+                transition: color 200ms, text-shadow 200ms;
+
+            }
+
+            a:hover {
+
+                color: rgb(171, 171, 171);
+                text-shadow: 0 2px rgb(60, 60, 60);
 
             }
             
