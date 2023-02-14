@@ -408,4 +408,14 @@ header {
 .menu-entete-container .menu .menu-item a:hover {
   color: rgb(171, 171, 171);
   text-shadow: 0 2px rgb(60, 60, 60);
+}
+
+html {
+  background-color: rgb(50, 70, 60);
+}
+
+main h1 {
+  margin: 0;
+  padding: 2rem;
+  border-top: 4px solid black;
 }/*# sourceMappingURL=style.css.map */
