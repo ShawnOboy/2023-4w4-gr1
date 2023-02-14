@@ -11,10 +11,9 @@
             while (have_posts()): the_post(); ?>
             <article>
                 <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-                <?php the_excerpt(); ?>
-                <?php the_permalink(); ?>
+                <span><?php the_excerpt(); ?></span>
+                <span><?php the_permalink(); ?></span>
             </article>
-            <hr>
             <?php endwhile; ?>
            <?php  endif; ?>
     </main>

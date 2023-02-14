@@ -422,4 +422,33 @@ main h1 {
   text-shadow: 0 0.5rem black;
   display: flex;
   justify-content: center;
+}
+main article {
+  background-color: rgb(41, 69, 55);
+  border-bottom: 4px solid black;
+  padding: 1rem;
+  height: 8rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+main article a {
+  text-decoration: none;
+}
+main article h3 {
+  margin: 0;
+  color: rgb(221, 221, 221);
+  text-shadow: 0 0.5rem black;
+  transition: color 200ms, text-shadow 200ms;
+}
+main article h3:hover {
+  color: rgb(171, 171, 171);
+  text-shadow: 0 0.4rem rgb(60, 60, 60);
+}
+main article p {
+  margin: 0;
+}
+main article span {
+  color: rgb(171, 171, 171);
 }/*# sourceMappingURL=style.css.map */
