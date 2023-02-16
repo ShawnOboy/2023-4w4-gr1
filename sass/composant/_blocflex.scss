@@ -1,0 +1,15 @@
+.blocflex {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    article {
+
+        flex: 1 0 15rem;
+        padding: 1rem;
+        margin: 1rem;
+
+    }
+
+}

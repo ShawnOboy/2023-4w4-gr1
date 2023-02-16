@@ -7,15 +7,17 @@
 <?php get_header(); ?>
     <main>
         <h1>Bienvenue sur 4W4</h1>
+        <section class="blocflex">
     <?php if(have_posts()):
             while (have_posts()): the_post(); ?>
             <article>
-                <a href="<?php the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
-                <span><?php the_excerpt(); ?></span>
-                <span><?php the_permalink(); ?></span>
+                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                <?= wp_trim_words(get_the_excerpt(), 10, " [...]"); ?>
+                <!-- <span><?php the_permalink(); ?></span> -->
             </article>
             <?php endwhile; ?>
            <?php  endif; ?>
+        </section>
     </main>
     
     <?php get_footer(); ?>

@@ -435,14 +435,14 @@ main article {
 }
 main article a {
   text-decoration: none;
-}
-main article h3 {
-  margin: 0;
   color: rgb(221, 221, 221);
   text-shadow: 0 0.5rem black;
   transition: color 200ms, text-shadow 200ms;
 }
-main article h3:hover {
+main article h3 {
+  margin: 0;
+}
+main article a:hover {
   color: rgb(171, 171, 171);
   text-shadow: 0 0.4rem rgb(60, 60, 60);
 }
@@ -451,4 +451,15 @@ main article p {
 }
 main article span {
   color: rgb(171, 171, 171);
+}
+
+.blocflex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.blocflex article {
+  flex: 1 0 15rem;
+  padding: 1rem;
+  margin: 1rem;
 }/*# sourceMappingURL=style.css.map */

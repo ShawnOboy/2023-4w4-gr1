@@ -18,6 +18,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 /* --------------------------------------------- base */
 @import "base/heading";
+@import "base/markdown";
 // @import "base/espacement";
 // @import "base/lien";
 // @import "base/list";
@@ -25,3 +26,4 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 /* --------------------------------------------- composant */
  @import "composant/entete";
  @import "composant/body";
+ @import "composant/blocflex";

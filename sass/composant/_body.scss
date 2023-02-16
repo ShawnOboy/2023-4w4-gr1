@@ -38,12 +38,6 @@ main {
             
             text-decoration: none;
 
-        }
-
-        h3 {
-
-            margin: 0;
-
             color: rgb(221, 221, 221);
             text-shadow: 0 0.5rem black;
 
@@ -51,7 +45,15 @@ main {
 
         }
 
-        h3:hover {
+        h3 {
+
+            margin: 0;
+
+            
+
+        }
+
+        a:hover {
 
             color: rgb(171, 171, 171);
             text-shadow: 0 0.4rem rgb(60, 60, 60);
