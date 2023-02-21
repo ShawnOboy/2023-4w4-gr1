@@ -371,6 +371,54 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
+ul,
+ol {
+  margin: 0rem 0rem;
+  padding: 7px;
+  color: #fff;
+  list-style-type: none;
+}
+@media screen and (min-width: 400px) {
+  ul,
+  ol {
+    margin: 1rem 0.5rem;
+    padding: 0 13px;
+  }
+}
+@media screen and (min-width: 700px) {
+  ul,
+  ol {
+    margin: 1rem 0.5rem;
+    padding: 0 15px;
+  }
+}
+
+ul li,
+ol li {
+  margin: 0.5rem 0rem;
+}
+
+ul li::before {
+  content: "-";
+  color: rgb(221, 221, 221);
+  text-shadow: 0 2px black;
+  padding-right: 0.3rem;
+}
+
+ul li li::before {
+  background: transparent;
+}
+
+pre {
+  background-color: #555;
+  color: #eee;
+  overflow-x: scroll;
+}
+
+hr {
+  content: none;
+}
+
 /* --------------------------------------------- composant */
 .site__titre {
   text-decoration: none;
@@ -409,6 +457,9 @@ header {
   color: rgb(171, 171, 171);
   text-shadow: 0 2px rgb(60, 60, 60);
 }
+.menu-entete-container .menu .menu-item::before {
+  content: "";
+}
 
 html {
   background-color: rgb(50, 70, 60);
@@ -427,7 +478,7 @@ main article {
   background-color: rgb(41, 69, 55);
   border-bottom: 4px solid black;
   padding: 1rem;
-  height: 8rem;
+  height: auto;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -436,18 +487,23 @@ main article {
 main article a {
   text-decoration: none;
   color: rgb(221, 221, 221);
-  text-shadow: 0 0.5rem black;
+  text-shadow: 0 0.25rem black;
   transition: color 200ms, text-shadow 200ms;
-}
-main article h3 {
-  margin: 0;
 }
 main article a:hover {
   color: rgb(171, 171, 171);
   text-shadow: 0 0.4rem rgb(60, 60, 60);
 }
+main article h3 {
+  margin: 0;
+  font-size: 2rem;
+  color: rgb(221, 221, 221);
+  text-shadow: 0 0.25rem black;
+}
 main article p {
   margin: 0;
+  padding-top: 1rem;
+  border-top: 1px solid black;
 }
 main article span {
   color: rgb(171, 171, 171);

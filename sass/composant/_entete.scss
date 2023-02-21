@@ -53,6 +53,12 @@ header {
             
         }
 
+        .menu-item::before {
+
+            content: "";
+
+        }
+
     }
 
 }
