@@ -1,0 +1,17 @@
+.recherche__section {
+
+    article {
+
+        cursor: pointer;
+        transition: background-color 200ms;
+
+        &:hover {
+        
+            background-color: rgb(68, 95, 82);
+        
+        }
+        
+    }
+
+
+}

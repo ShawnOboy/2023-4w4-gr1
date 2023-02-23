@@ -518,4 +518,12 @@ main article span {
   flex: 1 0 15rem;
   padding: 1rem;
   margin: 1rem;
+}
+
+.recherche__section article {
+  cursor: pointer;
+  transition: background-color 200ms;
+}
+.recherche__section article:hover {
+  background-color: rgb(68, 95, 82);
 }/*# sourceMappingURL=style.css.map */
