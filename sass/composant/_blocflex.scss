@@ -10,6 +10,24 @@
         padding: 1rem;
         margin: 1rem;
 
+        a {
+            
+            text-decoration: none;
+    
+            color: rgb(221, 221, 221);
+            text-shadow: 0 0.05rem black;
+    
+            transition: color 200ms, text-shadow 200ms;
+    
+        }
+    
+        a:hover {
+            
+            color: rgb(171, 171, 171);
+            text-shadow: 0 0.2rem rgb(60, 60, 60);
+            
+        }
+
     }
 
 }

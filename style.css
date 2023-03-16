@@ -523,6 +523,16 @@ main article span {
   padding: 1rem;
   margin: 1rem;
 }
+.blocflex article a {
+  text-decoration: none;
+  color: rgb(221, 221, 221);
+  text-shadow: 0 0.05rem black;
+  transition: color 200ms, text-shadow 200ms;
+}
+.blocflex article a:hover {
+  color: rgb(171, 171, 171);
+  text-shadow: 0 0.2rem rgb(60, 60, 60);
+}
 
 .recherche__section article {
   cursor: pointer;
@@ -562,4 +572,19 @@ main article span {
 
 .site__footer {
   grid-area: footer;
+}
+
+.menu-notes-container, .menu-cours-container {
+  background-color: rgb(60, 140, 150);
+  padding: 1rem 0;
+}
+.menu-notes-container a, .menu-cours-container a {
+  text-decoration: none;
+  color: rgb(221, 221, 221);
+  text-shadow: 0 0.05rem black;
+  transition: color 200ms, text-shadow 200ms;
+}
+.menu-notes-container a:hover, .menu-cours-container a:hover {
+  color: rgb(171, 171, 171);
+  text-shadow: 0 0.2rem rgb(60, 60, 60);
 }/*# sourceMappingURL=style.css.map */
