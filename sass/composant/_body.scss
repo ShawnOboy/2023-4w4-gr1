@@ -2,26 +2,21 @@ html {
 
     background-color: rgb(130, 175, 190);
 
-    /* width */
     ::-webkit-scrollbar {
         width: 1rem;
-        // border-top: 1px solid rgb(30, 80, 90);
-        
-        // border-bottom: 1px solid rgb(30, 80, 90);
     }
     
-    /* Track */
     ::-webkit-scrollbar-track {
         background: rgb(130, 175, 190);
         border-left: 0.55rem solid rgb(30, 80, 90);
     }
     
-    /* Handle */
     ::-webkit-scrollbar-thumb {
         background: rgb(60, 140, 150);
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
     }
     
-    /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
         background: rgb(40, 80, 80);
     }

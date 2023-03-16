@@ -468,10 +468,6 @@ header {
 
 html {
   background-color: rgb(130, 175, 190);
-  /* width */
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
 }
 html ::-webkit-scrollbar {
   width: 1rem;
@@ -482,6 +478,8 @@ html ::-webkit-scrollbar-track {
 }
 html ::-webkit-scrollbar-thumb {
   background: rgb(60, 140, 150);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 html ::-webkit-scrollbar-thumb:hover {
   background: rgb(40, 80, 80);
@@ -589,6 +587,7 @@ main article span {
 
 .site__main {
   grid-area: main;
+  width: 100%;
 }
 
 .site__footer {
@@ -611,4 +610,14 @@ main article span {
 .menu-notes-container a:hover, .menu-cours-container a:hover {
   color: rgb(171, 171, 171);
   text-shadow: 0 0.2rem rgb(60, 60, 60);
+}
+
+.no-aside {
+  grid-template-areas: "header" "main" "footer";
+}
+@media screen and (min-width: 1000px) {
+  .no-aside {
+    grid-template-columns: auto;
+    grid-template-areas: "header" "main" "footer";
+  }
 }/*# sourceMappingURL=style.css.map */
