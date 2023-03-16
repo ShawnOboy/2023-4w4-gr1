@@ -24,7 +24,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 // @import "base/list";
 
 /* --------------------------------------------- composant */
- @import "composant/entete";
- @import "composant/body";
- @import "composant/blocflex";
- @import "composant/recherche";
+@import "composant/entete";
+@import "composant/body";
+@import "composant/blocflex";
+@import "composant/recherche";
+
+/* --------------------------------------------- layout */
+
+@import "layout/aside-contenu";

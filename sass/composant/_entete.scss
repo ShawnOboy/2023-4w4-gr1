@@ -7,7 +7,7 @@
 
 header {
 
-    background-color: rgb(85,118,101);
+    background-color: rgb(60, 140, 150);
 
     display: flex;
     flex-flow: row nowrap;
@@ -15,13 +15,18 @@ header {
     align-items: center;
 
     margin: 0;
+    width: auto;
 
-    box-shadow: inset 0rem -1rem 2rem 1rem rgb(47, 89, 67);
+    box-shadow: inset 0rem -1rem 2rem 1rem rgb(25, 115, 125);
 
 }
 
-.menu-entete-container {
+.entete__nav {
 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
     font-size: 1.5rem;
 
     .menu {

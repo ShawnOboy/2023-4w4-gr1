@@ -5,11 +5,7 @@
 ?>
 
 <?php get_header(); ?>
-    <main>
-        <h1>Page non trouvée - Errurre 404</h1>
-        
+    <main class="site__main">
+        <h1>Erreur 404</h1>
     </main>
-    
     <?php get_footer(); ?>
-</body>
-</html>

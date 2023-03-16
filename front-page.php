@@ -5,21 +5,17 @@
 ?>
 
 <?php get_header(); ?>
-    <main>
+    <main class="site__main">
         <h1>Bienvenue sur 4W4</h1>
         <section class="blocflex">
-    <?php if(have_posts()):
-            while (have_posts()): the_post(); ?>
-            <article>
-                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                <p><?= wp_trim_words(get_the_excerpt(), 10, " [...]"); ?></p>
-                <!-- <span><?php the_permalink(); ?></span> -->
-            </article>
-            <?php endwhile; ?>
-           <?php  endif; ?>
+            <?php if(have_posts()):
+                while (have_posts()): the_post(); 
+                    $la_categorie = 'notes';
+                    if (in_category('galerie')){
+                        $la_categorie = 'galerie';}
+                    get_template_part("template-parts/categorie",$la_categorie);
+               endwhile; 
+             endif; ?>
         </section>
     </main>
-    
-    <?php get_footer(); ?>
-</body>
-</html>
+<?php get_footer(); ?>

@@ -6,7 +6,6 @@
 
 <?php get_header(); ?>
     <main>
-        <pre>index.php.php</pre>
         <h1>Bienvenue sur 4W4</h1>
         <?php 
         if (have_posts()):
@@ -23,5 +22,3 @@
     </main>
     
     <?php get_footer(); ?>
-</body>
-</html>

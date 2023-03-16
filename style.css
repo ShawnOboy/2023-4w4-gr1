@@ -429,53 +429,57 @@ hr {
 }
 
 header {
-  background-color: rgb(85, 118, 101);
+  background-color: rgb(60, 140, 150);
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
   margin: 0;
-  box-shadow: inset 0rem -1rem 2rem 1rem rgb(47, 89, 67);
+  width: auto;
+  box-shadow: inset 0rem -1rem 2rem 1rem rgb(25, 115, 125);
 }
 
-.menu-entete-container {
+.entete__nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
   font-size: 1.5rem;
 }
-.menu-entete-container .menu {
+.entete__nav .menu {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   list-style-type: none;
 }
-.menu-entete-container .menu .menu-item a {
+.entete__nav .menu .menu-item a {
   padding: 0.5rem 1rem;
   color: rgb(221, 221, 221);
   text-shadow: 0 2px black;
   transition: color 200ms, text-shadow 200ms;
 }
-.menu-entete-container .menu .menu-item a:hover {
+.entete__nav .menu .menu-item a:hover {
   color: rgb(171, 171, 171);
   text-shadow: 0 2px rgb(60, 60, 60);
 }
-.menu-entete-container .menu .menu-item::before {
+.entete__nav .menu .menu-item::before {
   content: "";
 }
 
 html {
-  background-color: rgb(50, 70, 60);
+  background-color: rgb(130, 175, 190);
 }
 
 main h1 {
   margin: 0;
   padding: 2rem;
-  border-top: 4px solid black;
   color: rgb(221, 221, 221);
   text-shadow: 0 0.5rem black;
   display: flex;
   justify-content: center;
 }
 main article {
-  background-color: rgb(41, 69, 55);
+  background-color: rgb(60, 140, 150);
   border-bottom: 4px solid black;
   padding: 1rem;
   height: auto;
@@ -523,7 +527,39 @@ main article span {
 .recherche__section article {
   cursor: pointer;
   transition: background-color 200ms;
+  padding: 1rem 1rem 2rem 1rem;
 }
 .recherche__section article:hover {
-  background-color: rgb(68, 95, 82);
+  background-color: rgb(70, 165, 175);
+}
+
+/* --------------------------------------------- layout */
+.site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "aside" "main" "footer";
+}
+@media screen and (min-width: 1000px) {
+  .site {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "header header" "aside main" "footer footer";
+  }
+}
+
+.site__entete {
+  grid-area: header;
+  padding: 1rem clamp(1rem, 3vw, 20rem);
+  border-bottom: 4px solid black;
+}
+
+.site__aside {
+  grid-area: aside;
+}
+
+.site__main {
+  grid-area: main;
+}
+
+.site__footer {
+  grid-area: footer;
 }/*# sourceMappingURL=style.css.map */
