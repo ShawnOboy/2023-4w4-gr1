@@ -468,6 +468,23 @@ header {
 
 html {
   background-color: rgb(130, 175, 190);
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+html ::-webkit-scrollbar {
+  width: 1rem;
+}
+html ::-webkit-scrollbar-track {
+  background: rgb(130, 175, 190);
+  border-left: 0.55rem solid rgb(30, 80, 90);
+}
+html ::-webkit-scrollbar-thumb {
+  background: rgb(60, 140, 150);
+}
+html ::-webkit-scrollbar-thumb:hover {
+  background: rgb(40, 80, 80);
 }
 
 main h1 {

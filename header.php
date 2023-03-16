@@ -33,8 +33,6 @@ $nouvel_class="";
                 </label> 
             </div>         
         </section>
-        <!-- <h1 class="site__titre"><a  href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></a></h1>
-        <h2 class="site__description"><?= bloginfo('description'); ?></h2> -->
 </header>
 
 <?php 
