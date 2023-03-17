@@ -6,5 +6,6 @@
  */
 ?>
 <article class="blocflex__galerie">
+    <h3>La Galerie</h3>
     <?php the_content(); ?>
 </article>

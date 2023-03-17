@@ -545,20 +545,34 @@ main article span {
   justify-content: space-between;
   padding: 0 1rem;
 }
-.blocflex article {
-  flex: 1 0 15rem;
+
+.blocflex__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  flex: 1 0 300px;
   padding: 1rem;
   margin: 1rem;
 }
-.blocflex article a {
+.blocflex__article h3, .blocflex__article h5, .blocflex__article h6, .blocflex__article p {
+  padding: 0rem;
+  margin: 0rem;
+}
+.blocflex__article a {
   text-decoration: none;
   color: rgb(221, 221, 221);
   text-shadow: 0 0.05rem black;
   transition: color 200ms, text-shadow 200ms;
 }
-.blocflex article a:hover {
+.blocflex__article a:hover {
   color: rgb(171, 171, 171);
   text-shadow: 0 0.2rem rgb(60, 60, 60);
+}
+
+.blocflex__galerie {
+  flex: 1 0 80%;
 }
 
 .recherche__section article {
