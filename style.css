@@ -596,6 +596,22 @@ img {
   background-color: rgb(70, 165, 175);
 }
 
+.recherche__input, button {
+  background-color: rgb(70, 165, 175);
+  border-radius: 8px;
+  color: aliceblue;
+  transition: background-color 200ms;
+}
+.recherche__input ::placeholder, button ::placeholder {
+  color: aliceblue;
+}
+.recherche__input:hover, button:hover {
+  background-color: rgb(60, 140, 150);
+}
+.recherche__input button:hover, .recherche__input span:hover, .recherche__input img:hover, button button:hover, button span:hover, button img:hover {
+  cursor: pointer;
+}
+
 /* --------------------------------------------- layout */
 .site {
   display: grid;

@@ -17,3 +17,32 @@
 
 
 }
+
+.recherche__input, button {
+
+    background-color: rgb(70, 165, 175);
+    border-radius: 8px;
+    color: aliceblue;
+
+    ::placeholder {
+
+        color: aliceblue;
+
+    }
+    
+    transition: background-color 200ms;
+
+    &:hover {
+        
+        background-color: rgb(60, 140, 150);
+    
+    }
+
+
+    button:hover, span:hover, img:hover {
+
+        cursor: pointer;
+
+    }
+
+}
