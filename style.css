@@ -476,7 +476,7 @@ hr {
 }
 
 html {
-  background-color: rgb(130, 175, 190);
+  background: rgb(130, 175, 190);
 }
 html ::-webkit-scrollbar {
   width: 1rem;
@@ -491,7 +491,7 @@ html ::-webkit-scrollbar-thumb {
   border-bottom-left-radius: 8px;
 }
 html ::-webkit-scrollbar-thumb:hover {
-  background: rgb(40, 80, 80);
+  background: rgb(255, 140, 0);
 }
 
 main h1 {
@@ -501,6 +501,9 @@ main h1 {
   text-shadow: 0 0.5rem black;
   display: flex;
   justify-content: center;
+}
+main h1::selection {
+  background: rgb(130, 175, 190);
 }
 main article {
   background-color: rgb(60, 140, 150);
@@ -537,6 +540,15 @@ main article p {
 }
 main article span {
   color: rgb(171, 171, 171);
+}
+
+h1::selection, h3::selection, a::selection, p::selection, input::selection, label::selection, button::selection, .lien::selection {
+  color: orange;
+  background: none;
+}
+
+img {
+  user-select: none;
 }
 
 .blocflex {
@@ -636,11 +648,6 @@ main article span {
 }
 
 .no-aside {
+  grid-template-columns: auto;
   grid-template-areas: "header" "main" "footer";
-}
-@media screen and (min-width: 1000px) {
-  .no-aside {
-    grid-template-columns: auto;
-    grid-template-areas: "header" "main" "footer";
-  }
 }/*# sourceMappingURL=style.css.map */

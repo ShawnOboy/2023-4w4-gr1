@@ -1,6 +1,6 @@
 html {
 
-    background-color: rgb(130, 175, 190);
+    background: rgb(130, 175, 190);
 
     ::-webkit-scrollbar {
         width: 1rem;
@@ -18,7 +18,7 @@ html {
     }
     
     ::-webkit-scrollbar-thumb:hover {
-        background: rgb(40, 80, 80);
+        background: rgb(255, 140, 0);
     }
 
 }
@@ -35,6 +35,12 @@ main {
 
         display: flex;
         justify-content: center;
+
+        &::selection {
+
+            background: rgb(130, 175, 190);
+    
+        }
 
     }
 
@@ -95,5 +101,22 @@ main {
         }
 
     }
+
+}
+
+h1, h3, a, p, input, label, button, .lien {
+
+    &::selection {
+
+        color: orange;
+        background: none;
+
+    }
+
+}
+
+img {
+
+    user-select: none;
 
 }
