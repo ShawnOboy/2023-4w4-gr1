@@ -704,6 +704,15 @@ img {
   text-shadow: 0 0.2rem rgb(60, 60, 60);
 }
 
+@media (pointer: none), (pointer: coarse) {
+  .site {
+    grid-template-columns: auto;
+    grid-template-areas: "header" "main" "footer";
+  }
+  .site__aside {
+    display: none;
+  }
+}
 .no-aside {
   grid-template-columns: auto;
   grid-template-areas: "header" "main" "footer";
