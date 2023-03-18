@@ -475,6 +475,18 @@ hr {
   content: "";
 }
 
+.custom-logo {
+  scale: 1;
+  mix-blend-mode: normal;
+  filter: saturate(1);
+  transition: scale 200ms, mix-blend-mode 200ms, filter 200ms;
+}
+.custom-logo:hover {
+  scale: 1.1;
+  mix-blend-mode: exclusion;
+  filter: saturate(3);
+}
+
 html {
   background: rgb(130, 175, 190);
   overflow-x: hidden;
