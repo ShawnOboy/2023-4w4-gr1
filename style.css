@@ -667,6 +667,28 @@ img {
 .site__aside {
   grid-area: aside;
   padding: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(120, 150, 160);
+}
+.site__aside h3 {
+  font-size: 2rem;
+  color: rgb(221, 221, 221);
+  text-shadow: 0 0.15rem black;
+}
+.site__aside p {
+  font-size: 1rem;
+  color: rgb(221, 221, 221);
+  text-shadow: 0 0.1rem black;
+}
+.site__aside .menu-cours-container code {
+  margin-top: 1rem;
+}
+.site__aside .menu-cours-container p {
+  margin: 0;
+  padding: 0;
 }
 
 .site__main {
