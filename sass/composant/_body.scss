@@ -21,6 +21,8 @@ html {
         background: rgb(255, 140, 0);
     }
 
+    overflow-x: hidden;
+
 }
 
 main {
@@ -58,6 +60,19 @@ main {
         flex-flow: column nowrap;
         justify-content: space-between;
         align-items: flex-start;
+
+        scale: 1;
+
+        transition: border-radius 200ms, border-top 200ms, border-bottom 200ms, scale 200ms;
+
+        &:hover {
+
+            border-radius: 8px;
+            border-top: 4px solid orange;
+            border-bottom: 4px solid orange;
+            scale: 1.05;
+
+        }
         
         a {
             
@@ -104,7 +119,7 @@ main {
 
 }
 
-h1, h3, a, p, input, label, button, .lien {
+h1, h3, h6, a, p, input, label, button, .lien, span, code {
 
     &::selection {
 
@@ -118,5 +133,12 @@ h1, h3, a, p, input, label, button, .lien {
 img {
 
     user-select: none;
+
+}
+
+#wpadminbar {
+
+    background-color: rgb(60, 140, 150);
+    border-bottom: 2px solid black;
 
 }

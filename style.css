@@ -477,6 +477,7 @@ hr {
 
 html {
   background: rgb(130, 175, 190);
+  overflow-x: hidden;
 }
 html ::-webkit-scrollbar {
   width: 1rem;
@@ -516,6 +517,14 @@ main article {
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-start;
+  scale: 1;
+  transition: border-radius 200ms, border-top 200ms, border-bottom 200ms, scale 200ms;
+}
+main article:hover {
+  border-radius: 8px;
+  border-top: 4px solid orange;
+  border-bottom: 4px solid orange;
+  scale: 1.05;
 }
 main article a {
   text-decoration: none;
@@ -542,13 +551,18 @@ main article span {
   color: rgb(171, 171, 171);
 }
 
-h1::selection, h3::selection, a::selection, p::selection, input::selection, label::selection, button::selection, .lien::selection {
+h1::selection, h3::selection, h6::selection, a::selection, p::selection, input::selection, label::selection, button::selection, .lien::selection, span::selection, code::selection {
   color: orange;
   background: none;
 }
 
 img {
   user-select: none;
+}
+
+#wpadminbar {
+  background-color: rgb(60, 140, 150);
+  border-bottom: 2px solid black;
 }
 
 .blocflex {
