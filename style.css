@@ -602,9 +602,6 @@ img {
   color: aliceblue;
   transition: background-color 200ms;
 }
-.recherche__input ::placeholder, button ::placeholder {
-  color: aliceblue;
-}
 .recherche__input:hover, button:hover {
   background-color: rgb(60, 140, 150);
 }
