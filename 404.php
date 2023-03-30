@@ -5,9 +5,12 @@
 ?>
 
 <?php get_header(); ?>
-    <main class="site__main" >
+    <main class="site__main page__404" >
         <h1>Erreur 404</h1>
-        <h4>- Voici les options possibles -</h4>
+        <h3>- Voici les options possibles -</h3>
+
+        <h4>- Vous pouvez tenter une recherche -</h4>
+        <?= get_search_form(); ?>
 
         <h4>- Voici les choix de cours possibles -</h4>
         <?php

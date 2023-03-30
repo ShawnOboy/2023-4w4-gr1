@@ -516,6 +516,28 @@ html ::-webkit-scrollbar-thumb {
 html ::-webkit-scrollbar-thumb:hover {
   background: rgb(255, 140, 0);
 }
+html h3 {
+  margin: 0;
+  font-size: 2.25rem;
+  color: rgb(221, 221, 221);
+  text-shadow: 0 0.25rem black;
+}
+html h4 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: rgb(221, 221, 221);
+  text-shadow: 0 0.25rem black;
+}
+html a {
+  text-decoration: none;
+  color: rgb(221, 221, 221);
+  text-shadow: 0 0.25rem black;
+  transition: color 200ms, text-shadow 200ms;
+}
+html a:hover {
+  color: rgb(171, 171, 171);
+  text-shadow: 0 0.4rem rgb(60, 60, 60);
+}
 
 main h1 {
   margin: 0;
@@ -548,16 +570,6 @@ main article:hover {
   border-bottom: 4px solid orange;
   scale: 1.05;
 }
-main article a {
-  text-decoration: none;
-  color: rgb(221, 221, 221);
-  text-shadow: 0 0.25rem black;
-  transition: color 200ms, text-shadow 200ms;
-}
-main article a:hover {
-  color: rgb(171, 171, 171);
-  text-shadow: 0 0.4rem rgb(60, 60, 60);
-}
 main article h3 {
   margin: 0;
   font-size: 2rem;
@@ -579,7 +591,7 @@ main article span {
   color: rgb(171, 171, 171);
 }
 
-h1::selection, h3::selection, h6::selection, a::selection, p::selection, input::selection, label::selection, button::selection, .lien::selection, span::selection, code::selection {
+h1::selection, h3::selection, h4::selection, h6::selection, a::selection, p::selection, input::selection, label::selection, button::selection, .lien::selection, span::selection, code::selection {
   color: orange;
   background: none;
 }
@@ -591,6 +603,20 @@ img {
 #wpadminbar {
   background-color: rgb(60, 140, 150);
   border-bottom: 2px solid black;
+}
+
+.infos_footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.link_footer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .blocflex {
@@ -649,6 +675,44 @@ img {
 }
 .recherche__input button:hover, .recherche__input span:hover, .recherche__input img:hover, button button:hover, button span:hover, button img:hover {
   cursor: pointer;
+}
+
+.page__404 {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.page__404 h4 {
+  padding: 2rem 0;
+}
+.page__404 nav {
+  width: 80vw;
+  height: auto;
+  padding: 2rem 1rem;
+}
+.page__404 nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.page__404 nav ul li {
+  padding: 0 0.25rem;
+}
+.page__404 nav ul a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: rgb(221, 221, 221);
+  text-shadow: 0 0.05rem black;
+  transition: color 200ms, text-shadow 200ms;
+}
+.page__404 nav ul a:hover {
+  color: rgb(171, 171, 171);
+  text-shadow: 0 0.2rem rgb(60, 60, 60);
 }
 
 /* --------------------------------------------- layout */
