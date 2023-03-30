@@ -125,6 +125,7 @@
 
 .menu-notes-container, .menu-cours-container {
 
+    width: 69%;
     background-color: rgb(60, 140, 150);
     border-top: 4px solid rgb(130, 190, 200);
     border-bottom: 4px solid rgb(30, 100, 110);
@@ -132,7 +133,6 @@
     border-right: 0px solid transparent;
     border-radius: 30px;
     padding: 1rem 0;
-
 
     transition: border-radius 200ms, border 200ms;
 

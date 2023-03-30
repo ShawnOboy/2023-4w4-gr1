@@ -72,9 +72,12 @@ function perso_menu_item_title($title, $item, $args) {
 if($args->menu == 'cours') { // on filtre uniquement le menu «cours»
 // Modifier la longueur du titre en fonction de nos besoins
 $sigle = substr($title,4,3);
-$title = substr($title, 7);
-$title = "<code>" .$sigle. "</code>" . "<p>" . wp_trim_words($title, 1, ' ... ') . "</p>" ; // A modifier am.liorer pour le tp1
+$title = "<code>" .$sigle. "</code>"; // A modifier am.liorer pour le tp1
 }
+if($args->menu == 'notes') {
+   if(substr($title,0,1) == "0") {$title = substr($title,1);}
+}
+
 return $title;
 }
 add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);         
