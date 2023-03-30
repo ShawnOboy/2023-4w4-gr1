@@ -71,8 +71,17 @@ function perso_menu_item_title($title, $item, $args) {
 // Remplacer 'nom_de_votre_menu' par l'identifiant de votre menu
 if($args->menu == 'cours') { // on filtre uniquement le menu «cours»
 // Modifier la longueur du titre en fonction de nos besoins
-$sigle = substr($title,4,3);
-$title = "<code>" .$sigle. "</code>"; // A modifier am.liorer pour le tp1
+   $sigle = substr($title,4,3);
+   $titre = substr($title, 7, -6);
+
+   if(is_404()) {
+      $title = "<code>" . wp_trim_words($titre, 3, "...") . "</code>";
+   }
+
+   else {
+      $title = "<code>" .$sigle. "</code>";
+   }
+
 }
 if($args->menu == 'notes') {
    if(substr($title,0,1) == "0") {$title = substr($title,1);}
