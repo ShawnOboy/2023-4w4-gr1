@@ -88,21 +88,3 @@
     }
 
 }
-
-.custom-logo {
-
-    scale: 1;
-    mix-blend-mode: normal;
-    filter: saturate(1);
-
-    transition: scale 200ms, mix-blend-mode 200ms, filter 200ms;
-
-    &:hover {
-
-        scale: 1.1;
-        mix-blend-mode: exclusion;
-        filter: saturate(3);
-
-    }
-
-}
