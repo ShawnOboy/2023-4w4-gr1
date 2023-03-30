@@ -762,4 +762,7 @@ img {
 .no-aside {
   grid-template-columns: auto;
   grid-template-areas: "header" "main" "footer";
+}
+.no-aside .site__aside {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
