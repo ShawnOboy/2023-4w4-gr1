@@ -144,6 +144,37 @@ main {
 
     }
 
+    .blocflex__galerie {
+
+        &:hover {
+
+            border-top: 4px solid rgb(130, 190, 200);
+            border-bottom: 4px solid rgb(30, 100, 110);
+            border-radius: 30px;
+            scale: 1;
+
+        }
+
+        figure img {
+
+            cursor: pointer;
+
+        }
+
+    }
+
+    .blocflex__article {
+
+        scale: none;
+
+        &:hover {
+
+            scale: 1.05;
+
+        }
+
+    }
+
 }
 
 h1, h3, h4, h6, a, p, input, label, button, .lien, span, code {
