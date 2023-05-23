@@ -1,17 +1,14 @@
-# Examen intra 4W4
+# Épreuve Finale
 
 ## Auteur: Shawn Roggero
 
 ### Lien de référence :
   - **Siteground** => https://cidweb39.sg-host.com/
   - **Github** => https://github.com/ShawnOboy
-
-## Objectif : Adapter le modèle 404.php pour reproduire la maquette incluse avec le devis
+ 
 ## Durée de l’épreuve : 3 heures  
 ## Compte pour 20% de la note globale du cours
-
-
-Objectifs :  Utilisez la structure de thème de votre TP2 pour réaliser le développement de l’épreuve finale. 
+## Objectifs :  Utilisez la structure de thème de votre TP2 pour réaliser le développement de l’épreuve finale.
 
 ## Barème de correction sur 20 points
 #### 1.	Les 5 pages annonçant les ateliers (3 points)        
