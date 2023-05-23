@@ -8,7 +8,7 @@
 
 <?php get_header(); ?>
 
-<main class="site__main atelier">
+<main class="atelier">
 
   <?php
     if ( have_posts() ) : the_post(); ?>

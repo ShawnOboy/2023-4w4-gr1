@@ -773,6 +773,10 @@ img {
   justify-content: flex-start;
   align-items: center;
   background: rgb(120, 150, 160);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .site__aside h3 {
   font-size: 2rem;
@@ -780,9 +784,7 @@ img {
   text-shadow: 0 0.15rem black;
 }
 .site__aside p {
-  font-size: 1rem;
   color: rgb(221, 221, 221);
-  text-shadow: 0 0.1rem black;
 }
 .site__aside .menu-cours-container code {
   margin-top: 1rem;
@@ -790,6 +792,9 @@ img {
 .site__aside .menu-cours-container p {
   margin: 0;
   padding: 0;
+}
+.site__aside p {
+  font-size: 2rem;
 }
 
 .site__main {
@@ -860,4 +865,24 @@ img {
 }
 .no-aside .site__aside {
   display: none;
+}
+
+.atelier {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1.5rem;
+}
+.atelier p {
+  color: white;
+  text-shadow: 0 0.025rem black;
+  font-size: 1rem;
+}
+.atelier p :first-child {
+  background-color: rgb(59, 105, 145);
+  padding: 1rem;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed black;
 }/*# sourceMappingURL=style.css.map */
