@@ -12,7 +12,7 @@
     <h1>Bienvenue sur 4W4</h1>
     
     <section class="bloc__viewport">    
-      <h2>Nos Ateliers en 2023</h2>
+      <h3>Nos Ateliers en 2023</h3>
         <?php wp_nav_menu(array(
             "menu"=>"atelier",
             "container"=>"nav"
