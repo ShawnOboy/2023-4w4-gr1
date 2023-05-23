@@ -8,7 +8,7 @@
     $menu = "notes"; 
     // $menu peut prendre les valeurs : "notes" ou "cours"
     if(in_category('cours')){ $menu = "cours";}
-
+      ?><h3><?= get_the_title(); ?></h3><?php
       the_post_thumbnail()
       ?><h3>Nos Ateliers en 2023</h3>
       <?php wp_nav_menu(array(
