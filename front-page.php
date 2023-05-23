@@ -10,17 +10,11 @@
         <?php dynamic_sidebar( 'entete_1' ); ?>
     </div>
     <h1>Bienvenue sur 4W4</h1>
-    <h2>Les Événements à venir</h2>
-
+    
     <section class="bloc__viewport">    
+      <h2>Nos Ateliers en 2023</h2>
         <?php wp_nav_menu(array(
-            "menu"=>"evenement",
-            "container"=>"nav"
-        )); ?>
-
-      <h2>Notre mission</h2>
-        <?php wp_nav_menu(array(
-            "menu"=>"bloc-archives",
+            "menu"=>"atelier",
             "container"=>"nav"
         )); ?>
     </section>
