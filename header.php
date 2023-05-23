@@ -10,9 +10,13 @@
 </head>
 <?php
 $nouvel_class="";
- if (is_front_page() || is_404()) {
-    $nouvel_class = "no-aside";
- }?> 
+  if (is_front_page() || is_404()) {
+      $nouvel_class = "no-aside";
+  }
+  if(is_page_template("template-atelier.php")) {
+    $nouvel_class="";
+  }
+?> 
 
 <body class="site <?= $nouvel_class ?>  ">
     <header class="site__entete">
@@ -37,6 +41,3 @@ $nouvel_class="";
 if (! is_front_page()){
     get_template_part("template-parts/aside"); 
 }
-
-?>
-   
